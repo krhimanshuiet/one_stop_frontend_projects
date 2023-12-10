@@ -1,0 +1,193 @@
+* {
+  box-sizing: border-box;
+  /* border: 1px dotted black; */
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.page-actions-container {
+  height: 3rem;
+  background-color: #218c74;
+  display: flex;
+  align-items: flex-end;
+  padding-left: 1rem;
+}
+
+.page-action {
+  margin: 0.5rem;
+  color: #f1f2f6;
+}
+
+.cell-props-actions-container {
+  height: 3rem;
+  background-color: #ecf0f1;
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+}
+
+.cell-props-actions-container > select {
+  border: none;
+  border-radius: 2px;
+  outline: none;
+}
+
+.cell-props-actions-container > * {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.font-family-prop {
+  padding: 0.2rem;
+}
+
+.font-size-prop {
+  padding: 0.2rem;
+}
+
+.formula-actions-container {
+  height: 2rem;
+  background-color: #ecf0f1;
+  padding-left: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.formula-actions-container > input {
+  border: none;
+  outline: none;
+  height: 70%;
+}
+
+.formula-actions-container > * {
+  display: inline-block;
+  margin-right: 0.7rem;
+}
+
+.formula-icon {
+  width: 1.2rem;
+}
+
+.address-bar {
+  width: 5rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.formula-bar {
+  width: calc(100vw - 1.2rem - 5rem - 0.7rem - 0.7rem - 0.7rem);
+}
+
+.sheet-actions-container {
+  height: 3rem;
+  /* background-color:lightcoral; */
+  display: flex;
+  align-items: center;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  gap: 1rem;
+  background-color: #ecf0f1;
+  cursor: pointer;
+}
+
+.sheet-actions-container > * {
+  display: inline-block;
+}
+
+.sheets-folder-container {
+  height: 80%;
+  width: calc(100vw - 2vw);
+  display: flex;
+  align-items: center;
+}
+
+.sheet-folder {
+  text-decoration: underline;
+  font-weight: bold;
+  text-decoration-thickness: 3px;
+  font-size: 0.9rem;
+}
+
+.sheet-add-icon {
+  width: 2vw;
+}
+
+.grid-container {
+  height: calc(100vh - 3rem - 3rem - 3rem - 2rem);
+  position: relative;
+  overflow:scroll;
+  background-color: #ecf0f1;
+}
+
+.top-left-dummy-box {
+  height: 2rem;
+  width: 2rem;
+  background-color: #747d8c;
+  position: fixed;
+  z-index:10;
+}
+.address-col-container { 
+  position:sticky;
+  top:2rem;
+  left:0;
+}
+
+.address-row-container {
+  display: flex;
+  position:sticky;
+  top:0;
+  left:2rem;
+}
+
+.cells-container {
+  position:absolute;
+  top:0;
+  left:2rem;
+}
+
+.address-column {
+  height: 2rem;
+  width: 2rem;
+  border: 1px solid #dfe4ea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.address-row {
+  height: 2rem;
+  width: 5rem;
+  border: 1px solid #dfe4ea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .cells-cont{
+    display:grid;
+    grid-template-columns: repeat(26,1fr);
+} */
+
+.rowCount{
+    display: flex;
+}
+
+.cell{
+    border:1px solid #dfe4ea;
+    height:2rem;
+    width:5rem;
+    outline:none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: scroll;
+}
+
+.cell::-webkit-scrollbar{
+    display: none;
+}
+
+
